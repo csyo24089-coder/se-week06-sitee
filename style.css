@@ -1,0 +1,25 @@
+/* 1. 背景は黒、文字は原色（ネオンカラー） */
+body {
+    background-color: #000000;
+    color: #00FF00; /* 蛍光の緑、または青や赤 */
+    font-family: "MS Dynamic Digital", "MS Pゴシック", sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* 2. リンクは青（訪問済みは紫）で、必ず下線をつける */
+a:link { color: #0000FF; text-decoration: underline; }
+a:visited { color: #800080; }
+
+/* 3. 点滅のアニメーション（昔のblinkタグの再現） */
+.blink-text {
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* 4. 画像の周りに太いボーダー（立体感の演出） */
+img {
+    border: 3px outset #888888;
+}
