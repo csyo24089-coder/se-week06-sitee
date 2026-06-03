@@ -1,6 +1,119 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>自己紹介</title>
-<marquee>自己紹介</marquee>
-<p class="blink-text">授業で作成したPage</p>
-<p>テスト</p>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★☆ ぼくのホームページ ☆★</title>
+    <style>
+        /* 全体の設定：背景をグレー、フォントをMS Pゴシックに（2ch風） */
+        body {
+            background-color: #EFEFEF;
+            color: #000000;
+            font-family: "ＭＳ Ｐゴシック", "MS PGothic", "Mona", sans-serif;
+            margin: 20px;
+        }
+
+        /* リンクの色：未訪問は青、訪問済みは紫（昔の標準） */
+        a { color: #0000FF; }
+        a:visited { color: #800080; }
+
+        /* タイトル装飾 */
+        h1 {
+            text-align: center;
+            color: #FF0000;
+            border: 3px double #FF0000;
+            padding: 10px;
+        }
+
+        /* アクセスカウンター風の装飾 */
+        .counter {
+            text-align: center;
+            font-weight: bold;
+        }
+        .counter span {
+            background-color: #000;
+            color: #00FF00;
+            font-family: monospace;
+            padding: 2px 5px;
+            letter-spacing: 2px;
+        }
+
+        /* アスキーアート用の設定（ズレないようにする） */
+        .aa {
+            white-space: pre;
+            font-size: 16px;
+            line-height: 1.1;
+            margin-top: 20px;
+        }
+
+        /* メニューのテーブル */
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+        }
+        td {
+            border: 1px solid #000000;
+            padding: 10px 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee bgcolor="#000080" style="color: #FFFFFF; padding: 5px;">
+        ようこそ！ここは〇〇の自己紹介ページです。相互リンク募集中！！
+    </marquee>
+
+    <h1>★☆ 〇〇の部屋 ☆★</h1>
+
+    <p class="counter">
+        あなたは <span>000123</span> 人目の訪問者です。<br>
+        （※1000番を踏んだ方はBBSで報告してください！）
+    </p>
+
+    <hr size="1" color="#000000">
+
+    <div align="center">
+        <h3>■ メニュー ■</h3>
+        <table>
+            <tr>
+                <td><a href="#profile">プロフィール</a></td>
+                <td><a href="#diary">日記（毎日更新！）</a></td>
+                <td><a href="#bbs">BBS（掲示板）</a></td>
+                <td><a href="#link">リンク集</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+
+    <h3 id="profile">▼ プロフィール</h3>
+    <ul>
+        <li><b>HN (ハンドルネーム):</b> 〇〇</li>
+        <li><b>生息地:</b> インターネットの海</li>
+        <li><b>趣味:</b> Flash鑑賞、ネットサーフィン</li>
+    </ul>
+
+    <h3 id="diary">▼ 日記</h3>
+    <p>
+        200X年X月X日<br>
+        今日は徹夜でサイトのHTMLを手打ちした。眠い。<br>
+        もっとコンテンツを増やしていきたい。
+    </p>
+
+    <div class="aa">
+    　 ∧＿∧
+    　（　´∀｀） ＜ ゆっくりしていってね！
+    　（　　　　）
+    　｜ ｜　|
+    　（_＿）＿）
+    </div>
+
+    <hr size="1" color="#000000">
+    <p align="center">
+        <small>当サイトはリンクフリーです。<br>Copyright (C) 200X 〇〇 All Rights Reserved.</small>
+    </p>
+
+</body>
+</html>
